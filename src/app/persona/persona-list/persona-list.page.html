@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Lista de Personas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+
+  <ion-list [inset]="true">
+    <ion-item [routerLink]="['/persona-edit/' + persona.id]" *ngFor="let persona of listaPersona">
+     <ion-label> {{persona.nombre}} {{persona.apellido}} - {{ persona.estado ? 'Activo' : 'Inactivo' }} - {{persona.direccion}} - {{persona.fecha}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab  slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button [routerLink]="['/persona-edit/new']" color="danger">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

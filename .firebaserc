@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ejemplo-e2ae9": {
+      "hosting": {
+        "app": [
+          "ejemplo-e2ae9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ejemplo-e2ae9"
+  }
+}
