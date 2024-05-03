@@ -1,0 +1,7 @@
+{
+  "name": "anto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
